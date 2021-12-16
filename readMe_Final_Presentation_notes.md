@@ -15,19 +15,25 @@ This puzzle has many names that you may be familiar with, such as: Hanjie, Paint
 - As for the colored puzzles, the same rule may also be applied, but there are also instances where adjoining blocks do not have any spaces in between. This happens when two neighboring blocks have different colors, thus, they can still be easily distinguished as compared to a standard B&W puzzle.
 
 **Why is a nonogram an NP-complete problem?**
+
 Remember that NP-complete problems are hard problems that can be reduced using an already solved problem. It makes use of verified guesses, which in our case is verified by the hint numbers.
+
 Also note that each nonogram puzzle designed for humans displays a different encrypted image. Thus, this requires different approaches to solve each puzzle. Which means that there is no “good” or efficient solution to solve these nonograms. Again, we rely on the hints given at the sides of the grid to solve the puzzle. But then, there are also puzzles with multiple or no solutions at all. For example, the 2x2 puzzle presented in the slides. This is a pattern referred to as an elementary switching component.
 
 **How do we solve a nonogram?**
+
 *There are two possible solutions. Note that these are not necessarily the best and most effective solutions, but it gets the job done.*
 
 The first possible solution is the depth-first search, exhaustive search, or backtracking algorithm. This is a slow execution process since the computer goes through every possible combination and placements of the colored blocks.
+
 Here’s a link to a GIF that I found online (https://lihautan.com/solving-nonogram-with-code/7bfbcf67e3276087.gif) that visualizes how backtracking on a nonogram puzzle looks like once coded.
 
 The second strategy is using an algorithm that implements a priority queue. Here, lines with hints of a longer set of colored blocks are prioritized first. Once the queue becomes empty, the computer then looks for a contradiction using the breadth-first search algorithm, which is faster than going through all of the cells repeatedly.
+
 *GIF Visualization: https://www.alphabetagamer.com/pictopix-beta-demo/*
 
 **Demo using Nonograms Pro (can be downloaded on Windows from the Microsoft Store)**
+
 *Other free nonogram apps can be found online (here's one you can take a look at: https://www.nonograms.org) or through Google Playstore/Apple App Store*
 
 **References:**

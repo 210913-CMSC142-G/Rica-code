@@ -1,6 +1,7 @@
 **NP-complete problem: Paint by Numbers (Nonogram) - readMe file**
 
 Rica Bernadine M. Calbario
+
 CMSC 142 G
 
 **What is a nonogram?**
